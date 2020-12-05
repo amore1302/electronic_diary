@@ -34,6 +34,7 @@
 Оболочка Джанго  shell запускается из терминала командной строки
 команда `python manage.py shell`
 Признак успешного запуска оболочки значок системы поменяется на `>>>`
+
 **Все скрипты выполняеся из Джанго оболочки**
 
 ### Скрипт 1 Исправляем плохио отметки на хорошие
@@ -42,7 +43,7 @@
     from datacenter.models import Schoolkid
     frolov_ivan=Schoolkid.objects.get(full_name__icontains='Фролов Иван')
     print(frolov_ivan)
-	from script import fix_marks
+    from script import fix_marks
     fix_marks(frolov_ivan)
 ```
 
@@ -58,7 +59,7 @@
     from datacenter.models import Schoolkid
     frolov_ivan=Schoolkid.objects.get(full_name__icontains='Фролов Иван')
     print(frolov_ivan)
-	from script import remove_chastisements
+    from script import remove_chastisements
     remove_chastisements(frolov_ivan)
 ```
 
