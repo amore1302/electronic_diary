@@ -51,6 +51,21 @@
 - Выполняем скрипт по исправлению плохих отметок на хорошие
 `fix_marks(frolov_ivan)`
 
+11111111111111111111111111111111111
+
+```html
+    from datacenter.models import Schoolkid
+    frolov_ivan=Schoolkid.objects.get(full_name__icontains='Фролов Иван')
+    print(frolov_ivan)
+    fix_marks(frolov_ivan)
+```
+- Подключаем таблицу учеников
+- Находим конкретного ученика Фролов Иван
+
+ - Убедимся что это Фролов Иван
+ 
+ Если все хорошо то будет распечатано
+Фролов Иван Григорьевич 6А 
 
 
 
@@ -58,10 +73,7 @@
 
 
 
-- Скачайте код
-- Установите зависимости командой `pip install -r requirements.txt`
-- Создайте БД командой `python3 manage.py migrate`
-- Запустите сервер командой `python3 manage.py runserver`
+
 
 
 ## Цели проекта
